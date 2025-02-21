@@ -1,0 +1,10 @@
+aiogram
+environs
+redis
+betterlogging
+
+# # For PostgreSQL and TortoiseORM + Aerich:
+# tortoise-orm
+# asyncpg
+# aerich
+# tomlkit
