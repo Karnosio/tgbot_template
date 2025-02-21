@@ -1,5 +1,5 @@
 from dataclasses import dataclass
-from typing import Optional, Type, List
+from typing import Optional, List
 
 from environs import Env
 
@@ -53,7 +53,7 @@ class TgBot:
     """
 
     token: str
-    admin_ids: List[Type[int]]
+    admin_ids: List[int]
     use_redis: bool
 
     @staticmethod
@@ -62,7 +62,8 @@ class TgBot:
         Creates the TgBot object from environment variables.
         """
         token = env.str('BOT_TOKEN')
-        admin_ids = env.list('ADMINS', subcast=int)
+        admin_ids = env.list('ADMINS')
+        map(int, admin_ids)
         use_redis = env.bool('USE_REDIS')
         return TgBot(token=token, admin_ids=admin_ids, use_redis=use_redis)
 
