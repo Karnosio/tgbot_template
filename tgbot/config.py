@@ -1,5 +1,5 @@
 from dataclasses import dataclass
-from typing import Optional
+from typing import Optional, Type, List
 
 from environs import Env
 
@@ -53,7 +53,7 @@ class TgBot:
     """
 
     token: str
-    admin_ids: list[int]
+    admin_ids: List[Type[int]]
     use_redis: bool
 
     @staticmethod
