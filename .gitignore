@@ -64,3 +64,6 @@ venv.bak/
 cache/
 
 .DS_Store
+
+migrations
+pyproject.toml
