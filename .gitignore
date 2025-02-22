@@ -65,5 +65,5 @@ cache/
 
 .DS_Store
 
-migrations
+migrations/
 pyproject.toml
