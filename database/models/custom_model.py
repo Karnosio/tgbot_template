@@ -4,11 +4,7 @@ from typing import Type, Optional, Any
 from tortoise import Model, BaseDBAsyncClient
 from tortoise.models import MODEL
 
-
-@dataclass
-class GetOrCreateReturn:
-    data: Model
-    is_new: bool
+from database.types.get_or_create_return import GetOrCreateReturn
 
 
 class CustomModel(Model):
