@@ -1,4 +1,3 @@
-from dataclasses import dataclass
 from typing import Type, Optional, Any
 
 from tortoise import Model, BaseDBAsyncClient
