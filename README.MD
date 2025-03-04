@@ -97,3 +97,5 @@ docker compose up --build
 
 ### Документація Tortoise ORM:
 https://tortoise.github.io/
+
+Вуаля✨ тепер у вас є телеграм бот :)
