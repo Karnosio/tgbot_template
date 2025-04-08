@@ -1,7 +1,7 @@
 """Import all routers and add them to routers_list."""
 from .admin import router as admin_router
-from .echo import router as user_router
-from .user import router as echo_router
+from .echo import router as echo_router
+from .user import router as user_router
 
 
 routers_list = [
